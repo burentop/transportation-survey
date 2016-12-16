@@ -4,7 +4,7 @@ $(document).ready(function () {
     $("#work-responses").show();
     $("input:checkbox[name=work-transportation]:checked").each(function () {
       var workTransportationMode = $(this).val();
-      $('#work-responses').append(workTransportationMode + "<br>");
+      $('#work-responses').append("<br>" + workTransportationMode);
     });
     $('#transportation_survey').hide();
   });
